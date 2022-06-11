@@ -1,0 +1,622 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flux Æon - Jardinería</title>
+
+    <!-- Bootstrap -->
+    <link href="../../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../../css/style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/192c0b0e4a.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+<body>
+  <!-- container -->
+  <div>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-jard">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html"><img src="../../img/Logo/ferreteria fondo.png" alt="" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../../index.html">Flux Æon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../../html/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="../../html/nosotros.html">Sobre nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../../html/contactanos.html">Contáctanos</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+    <!-- Carrusel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="4000">
+            <img src="../../img/Carrusel/jard1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="recolor">Departamento de Jardinería</h5>
+              <p class="recolor">Todos los artículos necesarios para tener un jardin de ensueño, solo en Flux Æon.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="../../img/Carrusel/jard2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="recolor">Calidad</h5>
+              <p class="recolor">Somos reconocidos por la calidad y duracion de nuestras herramientas y componentes.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="4000">
+            <img src="../../img/Carrusel/jard3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5 class="recolor">Confianza</h5>
+              <p class="recolor">Con mas de 35 años de experiencia, la Ferretería Flux Æon es tu mejor opcion.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <!-- Fin carrusel -->    
+
+    <!-- Nav del content -->
+    <div class="sticky-top-2">
+      <div class="menusito-botonExt">
+        <i class="fas fa-bars"></i>
+      </div>
+      </div>
+        <div class="barra-lateral">
+            <div class="boton-cerrarExt">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="volver-inicioExt">
+              <a href="#" title="Home"><i class="fa-solid fa-angle-up"></i></a>
+            </div>           
+            <div class="menusitoExt"> 
+              <div class="secciones">
+                  <div class="home">
+                    <a href="../../index.html" title="Construcción">Home <i class="fa-solid fa-house imagen2"></i></a>
+                  </div>                     
+                </div>       
+                <div class="secciones">
+                  <div class="construct">
+                    <a href="../construccion/construccion.html" title="Construcción">Construcción <i class="fa-solid fa-person-digging imagen2"></i></a>
+                  </div>                    
+                </div>
+                <div class="secciones">
+                  <div class="carpint">
+                    <a href="../carpinteria/carpinteria.html" title="Carpintería">Carpintería <i class="fa-solid fa-hammer imagen2"></i></a>
+                  </div>
+                </div>
+                <div class="secciones">
+                  <div class="fonta">
+                    <a href="../fontaneria/fontaneria.html" title="Fontanería">Fontanería <i class="fa-solid fa-faucet-drip imagen2"></i></a>
+                  </div>
+                </div>
+                <div class="secciones">
+                  <div class="herra">
+                    <a href="../herramientas/herramientas.html" title="Herramientas">Herramientas <i class="fa-solid fa-screwdriver-wrench imagen2"></i></a>
+                  </div>
+                </div>
+                <div class="secciones">
+                  <div class="hog">
+                    <a href="../hogar/hogar.html" title="Hogar">Hogar <i class="fa-solid fa-house-chimney imagen2"></i></a>
+                  </div>
+                </div>
+                <div class="secciones">
+                  <div class="jard">
+                    <a href="../jardineria/jardineria.html" title="Jardinería">Jardinería <i class="fa-solid fa-seedling imagen2"></i></a>
+                  </div>
+                </div>
+                <div class="secciones">
+                  <div class="pint">
+                    <a href="../pintura/pintura.html" title="Pinturas">Pinturas <i class="fa-solid fa-brush imagen2"></i></a>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+      <!-- Nav content final -->
+
+      <!-- Contenido -->
+        <div class="container mt-4">
+
+            <h1 class="page-title">Jardinería</h1>
+            <span class="d-block mt-2 text-muted"></span>
+            <hr class="mt-4">
+
+        </div>
+
+        <div class="container pb-5 mb-4">
+            
+
+            <div class="row">
+
+                <!-- Barra lateral -->
+
+                <div class="col-lg-3 navegacion">
+                   
+                    <div class="container-fluid">
+
+                      <div class="row gx-1">
+
+                        <div class="col-lg-12 border p-2 text-center navAreaJard bg-jard">
+                          <a href="jardineria.html" class="text-light"><h5>Página Principal</h5></a>
+                        </div>
+                        <div class="col-lg-12 border p-2 text-center navAreaJard">
+                          <a href="escobas.html"><h5>Escobas</h5></a>
+                        </div>
+                        <div class="col-lg-12 border p-2 text-center navAreaJard">
+                          <a href="handtools.html"><h5>Herramientas de Mano</h5></a>
+                        </div>
+                        <div class="col-lg-12 border p-2 text-center navAreaJard">
+                          <a href="macetas.html"><h5>Macetas</h5></a>
+                        </div>
+                        <div class="col-lg-12 border p-2 text-center navAreaJard">
+                            <a href="maquinariajard.html"><h5>Maquinaria</h5></a>
+                          </div>
+
+                      </div>
+
+                    </div>
+
+                </div>
+
+                <!-- Fin barra lateral -->
+
+                <!-- Productos -->
+                
+                <div class="col-lg-9">
+                    
+                  <div class="productos">
+            
+                    <div class="container">
+        
+                      <div class="row g-1">
+                                                       
+                        <div class="col-md-3">        
+                            <div class="card p-3">    
+                              <div class="text-center bordesito">
+          
+                                  <img src="../../img/Jardín/Escobas/Imacasa - Rastrillo Metálico Reforzado para Jardín.jpg" width="200">
+                                  
+                              </div>      
+                              <div class="product-details"> 
+                                
+                                  <h6>Imacasa - Rastrillo Metálico para Jardín</h6>       
+                                  <span class="font-weight-bold d-block text-primary">$ 7.60</span>
+    
+                                <div class="buttons d-flex flex-row">
+                                  <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button btn-block"><span class="dot">1</span>Al carrito</button>
+                                </div>
+    
+                                <div class="weight">
+          
+                                  <small class="text-black-50">c/u</small>
+                                                                  
+                                </div>
+                                
+                              </div>  
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3">        
+                            <div class="card p-3">    
+                              <div class="text-center bordesito">
+          
+                                  <img src="../../img/Jardín/Herramientas de Mano/Ace - Serrucho Plegable para Podar.jpg" width="200">
+                                  
+                              </div>      
+                              <div class="product-details"> 
+                                
+                                  <h6>Ace - Serrucho Plegable para Podar</h6>       
+                                  <span class="font-weight-bold d-block text-primary">$ 9.75</span>
+    
+                                <div class="buttons d-flex flex-row">
+                                  <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button btn-block"><span class="dot">1</span>Al carrito</button>
+                                </div>
+    
+                                <div class="weight">
+          
+                                  <small class="text-black-50">c/u</small>
+                                                                  
+                                </div>
+                                
+                              </div>  
+                            </div>
+                        </div>                                                                                              
+                        
+                        <div class="col-md-3">        
+                            <div class="card p-3">    
+                              <div class="text-center bordesito">
+          
+                                  <img src="../../img/Jardín/Maquinaria/Craftsman - Cortagrama Eléctrico.jpg" width="200">
+                                  
+                              </div>      
+                              <div class="product-details"> 
+                                
+                                  <h6>Craftsman - Cortagrama Eléctrico</h6>       
+                                  <span class="font-weight-bold d-block text-primary">$ 84.95</span>
+    
+                                <div class="buttons d-flex flex-row">
+                                  <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button btn-block"><span class="dot">1</span>Al carrito</button>
+                                </div>
+    
+                                <div class="weight">
+          
+                                  <small class="text-black-50">c/u</small>
+                                                                  
+                                </div>
+                                
+                              </div>  
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3">        
+                            <div class="card p-3">    
+                              <div class="text-center bordesito">
+          
+                                  <img src="../../img/Jardín/Escobas/Imacasa - Rastrillo Plástico para Jardín.jpg" width="200">
+                                  
+                              </div>      
+                              <div class="product-details"> 
+                                
+                                  <h6>Imacasa - Rastrillo Plástico para Jardín</h6>       
+                                  <span class="font-weight-bold d-block text-primary">$ 4.95</span>
+    
+                                <div class="buttons d-flex flex-row">
+                                  <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button btn-block"><span class="dot">1</span>Al carrito</button>
+                                </div>
+    
+                                <div class="weight">
+          
+                                  <small class="text-black-50">c/u</small>
+                                                                  
+                                </div>
+                                
+                              </div>  
+                            </div>
+                        </div>                                                                                                                                                             
+
+                        <div class="col-md-3">        
+                            <div class="card p-3">    
+                              <div class="text-center bordesito">
+          
+                                  <img src="../../img/Jardín/Macetas/Full Metal - Escuadra para Maceta.jpg" width="200">
+                                  
+                              </div>      
+                              <div class="product-details"> 
+                                
+                                  <h6>Full Metal - Escuadra para Maceta</h6>       
+                                  <span class="font-weight-bold d-block text-primary">$ 4.45</span>
+    
+                                <div class="buttons d-flex flex-row">
+                                  <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button btn-block"><span class="dot">1</span>Al carrito</button>
+                                </div>
+    
+                                <div class="weight">
+          
+                                  <small class="text-black-50">c/u</small>
+                                                                  
+                                </div>
+                                
+                              </div>  
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">        
+                            <div class="card p-3">    
+                              <div class="text-center bordesito">
+          
+                                  <img src="../../img/Jardín/Maquinaria/Troy Bilt - Cortagrama a Gasolina.jpg" width="200">
+                                  
+                              </div>      
+                              <div class="product-details"> 
+                                
+                                  <h6>Troy Bilt - Cortagrama a Gasolina</h6>       
+                                  <span class="font-weight-bold d-block text-primary">$ 90.25</span>
+    
+                                <div class="buttons d-flex flex-row">
+                                  <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button btn-block"><span class="dot">1</span>Al carrito</button>
+                                </div>
+    
+                                <div class="weight">
+          
+                                  <small class="text-black-50">c/u</small>
+                                                                  
+                                </div>
+                                
+                              </div>  
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">        
+                            <div class="card p-3">    
+                              <div class="text-center bordesito">
+          
+                                  <img src="../../img/Jardín/Herramientas de Mano/Yardsmith - Herramienta para Jardín 3 Piezas.jpg" width="200">
+                                  
+                              </div>      
+                              <div class="product-details"> 
+                                
+                                  <h6>Yardsmith - Herramienta para Jardín 3 Piezas</h6>       
+                                  <span class="font-weight-bold d-block text-primary">$ 14.99</span>
+    
+                                <div class="buttons d-flex flex-row">
+                                  <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button btn-block"><span class="dot">1</span>Al carrito</button>
+                                </div>
+    
+                                <div class="weight">
+          
+                                  <small class="text-black-50">c/u</small>
+                                                                  
+                                </div>
+                                
+                              </div>  
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">        
+                            <div class="card p-3">    
+                              <div class="text-center bordesito">
+          
+                                  <img src="../../img/Jardín/Macetas/Plastiken - Maceta Plástica Redonda.jpg" width="200">
+                                  
+                              </div>      
+                              <div class="product-details"> 
+                                
+                                  <h6>Plastiken - Maceta Plástica Redonda</h6>       
+                                  <span class="font-weight-bold d-block text-primary">$ 3.00</span>
+    
+                                <div class="buttons d-flex flex-row">
+                                  <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button btn-block"><span class="dot">1</span>Al carrito</button>
+                                </div>
+    
+                                <div class="weight">
+          
+                                  <small class="text-black-50">c/u</small>
+                                                                  
+                                </div>
+                                
+                              </div>  
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">        
+                            <div class="card p-3">    
+                              <div class="text-center bordesito">
+          
+                                  <img src="../../img/Jardín/Maquinaria/Yardsmith - Cortagrama Manual.jpg" width="200">
+                                  
+                              </div>      
+                              <div class="product-details"> 
+                                
+                                  <h6>Yardsmith - Cortagrama Manual</h6>       
+                                  <span class="font-weight-bold d-block text-primary">$ 65.80</span>
+    
+                                <div class="buttons d-flex flex-row">
+                                  <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button btn-block"><span class="dot">1</span>Al carrito</button>
+                                </div>
+    
+                                <div class="weight">
+          
+                                  <small class="text-black-50">c/u</small>
+                                                                  
+                                </div>
+                                
+                              </div>  
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">        
+                            <div class="card p-3">    
+                              <div class="text-center bordesito">
+          
+                                  <img src="../../img/Jardín/Macetas/Soporte Plástico para Plantas.jpg" width="200">
+                                  
+                              </div>      
+                              <div class="product-details"> 
+                                
+                                  <h6>Soporte Plástico para Plantas</h6>       
+                                  <span class="font-weight-bold d-block text-primary">$ 1.50</span>
+    
+                                <div class="buttons d-flex flex-row">
+                                  <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button btn-block"><span class="dot">1</span>Al carrito</button>
+                                </div>
+    
+                                <div class="weight">
+          
+                                  <small class="text-black-50">c/u</small>
+                                                                  
+                                </div>
+                                
+                              </div>  
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3">        
+                            <div class="card p-3">    
+                              <div class="text-center bordesito">
+          
+                                  <img src="../../img/Jardín/Macetas/Escurridor para Maceta.jpg" width="200">
+                                  
+                              </div>      
+                              <div class="product-details"> 
+                                
+                                  <h6>Escurridor para Maceta</h6>       
+                                  <span class="font-weight-bold d-block text-primary">$ 1.75</span>
+    
+                                <div class="buttons d-flex flex-row">
+                                  <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button btn-block"><span class="dot">1</span>Al carrito</button>
+                                </div>
+    
+                                <div class="weight">
+          
+                                  <small class="text-black-50">c/u</small>
+                                                                  
+                                </div>
+                                
+                              </div>  
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">        
+                            <div class="card p-3">    
+                              <div class="text-center bordesito">
+          
+                                  <img src="../../img/Jardín/Herramientas de Mano/Ace - Tijera para Podar.jpg" width="200">
+                                  
+                              </div>      
+                              <div class="product-details"> 
+                                
+                                  <h6>Ace - Tijera para Podar</h6>       
+                                  <span class="font-weight-bold d-block text-primary">$ 3.25</span>
+    
+                                <div class="buttons d-flex flex-row">
+                                  <div class="cart"><i class="fa fa-shopping-cart"></i></div> <button class="btn btn-success cart-button btn-block"><span class="dot">1</span>Al carrito</button>
+                                </div>
+    
+                                <div class="weight">
+          
+                                  <small class="text-black-50">c/u</small>
+                                                                  
+                                </div>
+                                
+                              </div>  
+                            </div>
+                        </div>         
+
+                      </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                </div>
+
+                
+
+                <!-- Fin productos -->
+            </div>
+         
+        </div>
+      <!-- Fin contenido -->
+      
+        <!-- FOOTER -->
+
+        <footer class="container-fluid" id="footer">
+          
+          <div class="row p-5 pb-2 bg-dark text-white">
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+
+              <p class="h5 mb-3">Redes Sociales</p>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="https://www.facebook.com/" target="_blank">Facebook</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="https://www.instagram.com/" target="_blank">Instagram</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="https://twitter.com/" target="_blank">Twitter</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="https://www.youtube.com/" target="_blank">Youtube</a>
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+
+              <p class="h5 mb-3">Contácto</p>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="../../html/contactanos.html">Contáctanos</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Preguntas frecuentes</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Home delivery</a>
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+
+              <p class="h5 mb-3">Sobre Nosotros</p>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="../../html/nosotros.html">Historia de nuestra empresa</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="../../html/nosotros.html">Misión y Visión</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="../../html/nosotros.html">Integrantes</a>
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+
+              <p class="h5 mb-3">Avisos y Políticas</p>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Política de privacidad</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 pt-4">
+              <p class="text-white text-center">Copyright Flux Æon - All rights reserved © 2022 </p>
+            </div>
+
+          </div>
+
+          
+
+        </footer>
+
+    </main>
+      
+  </div>   
+    <script src="../../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/productsApp.js"></script>
+    <script src="../../js/externalNavApp.js"></script>
+</body>
+</html>

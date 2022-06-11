@@ -1,0 +1,867 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+  color: #5a5a5a;
+}
+
+/* Index Content */
+.carousel-caption {
+    color: white;
+}
+
+.container .row .col-md-7 .btn {
+    margin-bottom: 1rem;
+}
+
+.nav-scroller {
+    position: relative;
+    z-index: 2;
+    height: 2.75rem;
+    overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.lead {
+    font-size: 28px;
+}
+
+.icono {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.sombra {
+    box-shadow: rgba(0, 0, 0, 0.40) 0px 5px 15px;
+}
+
+.featurette-divider {
+    margin: 5rem 0; 
+  }
+  
+.featurette-heading {
+    letter-spacing: -.05rem;
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+  
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+  
+
+/* Fin Index content */
+
+/* Navbar lateral */
+
+  
+.barra-lateral {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    right: -100%;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: right;
+    z-index: 1040;
+}
+
+.barra-lateral.activo {
+    position: fixed;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    width: 200px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    overflow-y: auto;
+}
+
+.barra-lateral .menusito {
+    margin-top: 150px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .barra-lateral .menusito {
+        margin-top: 80px;
+        width: 100%;
+    }
+}
+
+    /* Hover */
+
+.barra-lateral .menusito .secciones {
+    position: relative;
+    cursor: pointer;
+}
+
+.barra-lateral .menusito .secciones a{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+    text-align: right;
+}
+
+.barra-lateral .menusito .secciones .construct a:hover{
+    background: #7d8471;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.barra-lateral .menusito .secciones .carpint a:hover{
+    background: #804000;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.barra-lateral .menusito .secciones .fonta a:hover{
+    background: #286DA8;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.barra-lateral .menusito .secciones .herra a:hover{
+    background: #7A7F80;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.barra-lateral .menusito .secciones .hog a:hover{
+    background: #C0B283;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.barra-lateral .menusito .secciones .jard a:hover{
+    background: #007849;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.barra-lateral .menusito .secciones .pint a:hover{
+    transition: 0.8s ease;
+    background: linear-gradient(
+        #fd004c 16.7%,
+        #fe9000 16.7%,
+        #fe9000 33.4%,
+        #fff020 33.4%,
+        #fff020 50.1%,
+        #3edf4b 50.1%,
+        #3edf4b 66.8%,
+        #3363ff 66.8%,
+        #3363ff 83.5%,
+        #b102b7 83.5%
+    );
+    animation: rainbow 50s linear infinite;
+}
+
+@keyframes rainbow {
+    100% {
+        background-position: 0 30em;
+    }
+}
+
+.barra-lateral .menusito .secciones i{
+    margin-right: 15px;
+}
+
+.boton-cerrar {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    margin: 25px;
+}
+
+.boton-cerrar:hover {
+
+    transition: 0.3s ease;
+}
+
+.volver-inicio a {
+    text-decoration: none;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    right: 50;
+    bottom: 0;
+    margin: 24px;  
+}
+
+
+.menusito-boton {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    top: 70%;
+    right: 10px;
+    padding-top: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    border: rgba(0, 0, 0, 0.3) solid 1px;
+}
+
+.sticky-top-2 {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 50%;
+    z-index: 1020;
+}
+/* Fin Hover */
+
+/* Barra lateral de los departamentos */
+
+.barra-lateral .menusitoExt {
+    margin-top: 80px;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .barra-lateral .menusitoExt {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+    /* Hover */
+
+.barra-lateral .menusitoExt .secciones {
+    position: relative;
+    cursor: pointer;
+}
+
+.barra-lateral .menusitoExt .secciones a{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 60px;
+    text-align: right;
+}
+
+.barra-lateral .menusitoExt .secciones .home a:hover{
+    background: #686868;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.barra-lateral .menusitoExt .secciones .construct a:hover{
+    background: #7d8471;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.barra-lateral .menusitoExt .secciones .carpint a:hover{
+    background: #804000;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.barra-lateral .menusitoExt .secciones .fonta a:hover{
+    background: #286DA8;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.barra-lateral .menusitoExt .secciones .herra a:hover{
+    background: #7A7F80;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.barra-lateral .menusitoExt .secciones .hog a:hover{
+    background: #C0B283;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.barra-lateral .menusitoExt .secciones .jard a:hover{
+    background: #007849;
+    transition: 0.3s ease;
+    color: #fff;
+}
+
+.barra-lateral .menusitoExt .secciones .pint a:hover{
+    transition: 0.8s ease;
+    background: linear-gradient(
+        #fd004c 16.7%,
+        #fe9000 16.7%,
+        #fe9000 33.4%,
+        #fff020 33.4%,
+        #fff020 50.1%,
+        #3edf4b 50.1%,
+        #3edf4b 66.8%,
+        #3363ff 66.8%,
+        #3363ff 83.5%,
+        #b102b7 83.5%
+    );
+    animation: rainbow 50s linear infinite;
+}
+
+@keyframes rainbow {
+    100% {
+        background-position: 0 30em;
+    }
+}
+
+/* Fin hover */
+
+.barra-lateral .menusitoExt .secciones i{
+    margin-right: 15px;
+}
+
+.boton-cerrarExt {
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    right: 0;
+    bottom: 7;
+    cursor: pointer;
+    margin: 25px;
+}
+
+.boton-cerrarExt:hover {
+    transition: 0.3s ease;
+}
+
+.volver-inicioExt a {
+    text-decoration: none;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    left: 0;
+    bottom: 7;
+    margin: 24px;  
+}
+
+
+.menusito-botonExt {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 30px;
+    color: black;
+    cursor: pointer;
+    top: 70%;
+    right: 10px;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 7px;
+    border: rgba(0, 0, 0, 0.3) solid 1px;
+}
+
+
+/* Fin navbar lateral */
+
+/* Logo */
+.logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+/* fin logo */
+
+/* Imagen carrusel */
+
+.carousel {
+    margin-bottom: 4rem;
+}
+
+.carrusel-caption {
+    color: #5a5a5a;
+}
+
+.recolor {
+    text-shadow: 0 0 2px rgb(0, 0, 0);
+}
+
+.recolorDark {
+    color: black;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.4;
+  }
+
+  .featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+
+/* Fin imagen carrusel */
+
+/* Galeria */
+
+/* Fin Galeia */
+
+/* Sobre nosotros */
+
+.titulon {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contenido {
+    text-align: justify;
+}
+
+.mision {
+    font-size: 20px;
+    border: 1px solid black;
+    width: 48%;
+    margin: 10px;
+}
+
+.vision {
+    font-size: 20px;
+    border: 1px solid black;
+    width: 48%;
+    margin: 10px;
+}
+
+/* Fin sobre nosotros */
+
+/* Contáctanos */
+.formulario{
+    padding: 40px;
+    max-width: 400px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 7px;
+    border: 3px solid darkcyan;
+    background-color: rgb(22, 15, 15);
+    color: white;
+    font-size: medium;
+}
+.campoForm{
+    border: none;
+    outline: none;
+    border-radius: 0px;
+    font-size: medium;
+    border-bottom: solid 3px darkcyan;
+    color: white;
+    background-color: transparent;
+}
+.campoForm:focus{
+    border-bottom: solid 3px darkcyan;
+    font-size: medium;
+    color: white;
+    box-shadow: none;
+    background-color: rgb(22, 15, 15);
+}
+#tituloForm{
+    text-align: center;
+    padding: 10px;
+}
+label{
+    color: white;
+}
+.miSubmit{
+    margin-top: 15px;
+    border: 2px solid darkcyan;
+    color: darkcyan;
+}
+.miSubmit:hover{
+    border: 2px solid black;
+    color: black;
+    background-color: darkcyan;
+}
+#liveAlertPlaceholder{
+    margin-top: 20px;
+}
+/* Fin de contáctanos */
+
+/* Lista de productos */
+
+.bordesito {
+    border-bottom: 1px solid #d4d2d2!important;
+}
+
+.productos{ 
+    margin-top: 30px;
+}
+
+.card{
+
+    border:1px solid #d4d2d2!important;
+    cursor: pointer;
+}
+
+
+.weight{
+
+    margin-top: -65px; 
+    transition: all 0.5s;  
+}
+
+.weight small{
+
+    color: #e2dede;
+}
+
+.buttons {
+        padding: 10px;
+    background-color: #d6d4d44f;
+    border-radius: 4px;
+    position: relative;
+    margin-top: 7px;
+    opacity: 0;
+    transition: all 0.8s;
+}
+
+.dot {
+    height: 14px;
+    width: 14px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    left: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    color: #fff;
+    opacity: 0;
+}
+
+.cart-button {
+    height: 48px
+}
+
+.cart-button:focus {
+    box-shadow: none
+}
+
+.cart {
+    position: relative;
+    height: 48px !important;
+    width: 50px;
+    margin-right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 11px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 1s ease-in-out;
+    overflow: hidden;
+
+}
+
+.cart-button.clicked span.dot {
+    animation: item 0.3s ease-in forwards
+}
+
+@keyframes item {
+    0% {
+        opacity: 1;
+        top: 30%;
+        left: 30%
+    }
+
+    25% {
+        opacity: 1;
+        left: 26%;
+        top: 0%
+    }
+
+    50% {
+        opacity: 1;
+        left: 23%;
+        top: -22%
+    }
+
+    75% {
+        opacity: 1;
+        left: 19%;
+        top: -18%
+    }
+
+    100% {
+        opacity: 1;
+        left: 14%;
+        top: 28%
+    }
+}
+
+.card {
+    opacity: 0;
+}
+
+.card:hover .buttons{
+
+    opacity: 1;
+}
+
+
+.card:hover .weight{
+
+     margin-top: 10px;
+}
+
+.card:hover{
+
+    transform: scale(1.04);
+    z-index: 2;
+    overflow: hidden;
+}
+/* Fin Lista de productos */
+/* Navegacion de productos Construccion */
+
+.navArea {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navArea a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.navArea:hover {
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.navegacion { 
+    margin-top: 30px;
+}
+
+.bg-const {
+    background-color: #7d8471;
+}
+/* /Construccion */
+
+/* Navegacion de productos Carpinteria */
+.navAreaCarp {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navAreaCarp a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.navAreaCarp:hover {
+    transition: 0.3s ease;
+    box-shadow: rgba(128, 64, 0, 0.35) 0px 5px 15px;
+
+}
+
+.navegacion { 
+    margin-top: 30px;
+}
+
+.bg-carpt {
+    background-color: rgb(128, 64, 0);
+}
+
+/* /Carpinteria */
+
+/* Navegacion de productos Fontaneria */
+.navAreaFont {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navAreaFont a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.navAreaFont:hover {
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 204, 255, 0.35) 0px 5px 15px;
+}
+
+.bg-font {
+    background-color: #286DA8;
+}
+
+/* /Fontaneria */
+
+/* Navegacion de productos Herramientas */
+.navAreaHerra {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navAreaHerra a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.navAreaHerra:hover {
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+/* / Herramientas */
+
+/* Navegacion de productos Hogar */
+.nav-itemHog {
+    text-shadow: 0 0 5px rgb(141, 141, 141);
+}
+.navAreaHog {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navAreaHog a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.navAreaHog:hover {
+    transition: 0.3s ease;
+    box-shadow: #635b41 0px 5px 15px;
+
+}
+
+.bg-Hog {
+    background-color: #C0B283;
+}
+/* / Hogar */
+
+/* Navegacion de productos Jardinería */
+.navAreaJard {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navAreaJard a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.navAreaJard:hover {
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 120, 73, 0.35) 0px 5px 15px;
+
+}
+
+.bg-jard {
+    background-color: #007849;
+}
+/* /Jardinería */
+
+/* Navegacion de productos Pinturas */
+.nav-itemPint {
+    text-shadow: 0 0 9px rgb(0, 0, 0);
+}
+
+.navAreaPint {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.navAreaPint a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.navAreaPint:hover {
+    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.recolorPint {
+    text-shadow: 0 0 9px rgb(0, 0, 0);
+    /* box-shadow: 0 0 9px rgb(0, 0, 0); */
+}
+
+.bg-pint {
+    transition: 0.8s ease;
+    background: linear-gradient(
+        #fd004c 16.7%,
+        #fe9000 16.7%,
+        #fe9000 33.4%,
+        #fff020 33.4%,
+        #fff020 50.1%,
+        #3edf4b 50.1%,
+        #3edf4b 66.8%,
+        #3363ff 66.8%,
+        #3363ff 83.5%,
+        #b102b7 83.5%
+    );
+    /* animation: rainbow 50s linear infinite; */
+}
+
+
+/* @keyframes rainbow {
+    100% {
+        background-position: 0 30em;
+    }
+} */
+
+
+.bg-pint1 {
+    background-color: #fd004c;
+}
+
+.bg-pint2 {
+    background-color: #fff020;
+}
+
+.bg-pint3 {
+    background-color: #3363ff;
+}
+/* /Pinturas */

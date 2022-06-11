@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flux Æon</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/192c0b0e4a.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+</head>
+<body>
+
+  <!-- container -->
+  <div>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="img/Logo/ferreteria fondo.png" alt="" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Flux Æon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="html/galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="html/nosotros.html">Sobre nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="html/contactanos.html">Contáctanos</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+    <!-- Carrusel -->
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <img src="img/Carrusel/index1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="recolor">Ferretería Flux Æon</h5>
+            <p class="recolor">Donde encontraras los mejores productos.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="img/Carrusel/index2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="recolor">Calidad</h5>
+            <p class="recolor">Somos reconocidos por la calidad y duracion de nuestras herramientas y componentes.</p>
+          </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="4000">
+          <img src="img/Carrusel/index3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="recolor">Confianza</h5>
+            <p class="recolor">Con mas de 35 años de experiencia, la Ferretería Flux Æon es tu mejor opcion.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+      <!-- Fin carrusel -->
+
+      <!-- Nav del content -->
+        <div class="sticky-top-2">
+        <div class="menusito-boton ">
+          <i class="fas fa-bars"></i>
+        </div>
+        </div>
+          <div class="barra-lateral">
+              <div class="boton-cerrar">
+                  <i class="fas fa-times"></i>
+              </div>
+              <div class="volver-inicio">
+                <a href="#" title="Home"><i class="fa-solid fa-angle-up"></i></a>
+              </div>
+              <div class="menusito">        
+                  <div class="secciones">
+                    <div class="construct">
+                      <a href="#seccion1" title="Construcción">Construcción <i class="fa-solid fa-person-digging imagen2"></i></a>
+                    </div>                    
+                  </div>
+                  <div class="secciones">
+                    <div class="carpint">
+                      <a href="#seccion2" title="Carpintería">Carpintería <i class="fa-solid fa-hammer imagen2"></i></a>
+                    </div>
+                  </div>
+                  <div class="secciones">
+                    <div class="fonta">
+                      <a href="#seccion3" title="Fontanería">Fontanería <i class="fa-solid fa-faucet-drip imagen2"></i></a>
+                    </div>
+                  </div>
+                  <div class="secciones">
+                    <div class="herra">
+                      <a href="#seccion4" title="Herramientas">Herramientas <i class="fa-solid fa-screwdriver-wrench imagen2"></i></a>
+                    </div>
+                  </div>
+                  <div class="secciones">
+                    <div class="hog">
+                      <a href="#seccion5" title="Hogar">Hogar <i class="fa-solid fa-house-chimney imagen2"></i></a>
+                    </div>
+                  </div>
+                  <div class="secciones">
+                    <div class="jard">
+                      <a href="#seccion6" title="Jardinería">Jardinería <i class="fa-solid fa-seedling imagen2"></i></a>
+                    </div>
+                  </div>
+                  <div class="secciones">
+                    <div class="pint">
+                      <a href="#seccion7" title="Pinturas">Pinturas <i class="fa-solid fa-brush imagen2"></i></a>
+                    </div>
+                  </div>
+                  
+              </div>
+          </div>
+        <!-- Nav content final -->
+      <!-- Contenido -->
+        <div class="container marketing">
+
+          <!-- LINKS A DEPARTAMENTOS -->
+
+          <!-- Identificado de la seccion -->
+          <div id="seccion1" ></div>
+
+          <hr class="featurette-divider">
+          
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1" >Bienvenido a la seccion de Construcción</h2>
+                <p class="lead">Donde encontraras los mejores materiales y de calidad, para volver realidad todas esas construcciones que soñaste.</p>
+                <a href="html/construccion/construccion.html"><button type="button" class="btn btn-outline-secondary">Ir a Construcción</button></a>
+              </div>
+              
+              <div class="col-md-5">
+                <img src="icons/construccion icon.jpg" class="icono sombra" alt="">
+              </div>
+              
+            </div>
+
+          <!-- Identificado de la seccion -->
+          <div id="seccion2" ></div>
+          
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Bienvenido a la seccion de Carpintería</h2>
+              <p class="lead">La mejor elección en herramientas y materiales relacionados con la carpintería.</p>
+              <a href="html/carpinteria/carpinteria.html"><button type="button" class="btn btn-outline-warning">Ir a Carpintería</button></a>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="icons/carpinteria icon.jpg" class="icono sombra" alt="">
+      
+            </div>
+          </div>
+          
+          <!-- Identificado de la seccion -->
+          <div id="seccion3" ></div>
+
+          <hr class="featurette-divider">
+      
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Bienvenido a la sección de Fontanería.</h2>
+                <p class="lead">Componentes y herramientas de calidad para trabajos profesionales de fontanería.</p>
+                <a href="html/fontaneria/fontaneria.html"><button type="button" class="btn btn-outline-primary">Ir a Fontanería</button></a>
+              </div>
+              <div class="col-md-5">
+                <img src="icons/fontaneria icon.jpg" class="icono sombra" alt="">
+              </div>
+            </div>
+      
+          <!-- Identificado de la seccion -->
+          <div id="seccion4" ></div>
+
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Bienvenido a la seccion de Herramientas.</h2>
+              <p class="lead">¿Aun no has encontrado tu herramienta indicada? Prueba revisar en la sección de herramientas, hay de todo tipo y de gran calidad.</p>
+              <a href="html/herramientas/herramientas.html"><button type="button" class="btn btn-outline-secondary">Ir a Herramientas</button></a>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="icons/herramientas icon.jpg" class="icono sombra" alt="">   
+            </div>
+          </div>
+      
+          <!-- Identificado de la seccion -->
+          <div id="seccion5" ></div>
+
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading fw-normal lh-1">Bienvenido a la seccion de Hogar</h2>
+              <p class="lead">En la seccion de hogar encontraras los mejores productos para mejorar la comodidad de tu casa.</p>
+              <a href="html/hogar/hogar.html"><button type="button" class="btn btn-outline-danger">Ir a Hogar</button></a>
+            </div>
+            <div class="col-md-5">
+              <img src="icons/hogar icon.jpg" class="icono sombra" alt="">
+            </div>
+          </div>
+      
+          <!-- Identificado de la seccion -->
+          <div id="seccion6" ></div>
+
+          <hr class="featurette-divider">
+      
+          <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+              <h2 class="featurette-heading fw-normal lh-1">Bienvenido a la sección de Jardinería.</h2>
+              <p class="lead">Para cuidar y mantener un hermoso jardín, asi poderlo disfrutar en familia.</p>
+              <a href="html/jardineria/jardineria.html"><button type="button" class="btn btn-outline-success">Ir a Jardinería</button></a>
+            </div>
+            <div class="col-md-5 order-md-1">
+              <img src="icons/jardin icon.jpg" class="icono sombra" alt="">
+      
+            </div>
+          </div>
+        
+          <!-- Identificado de la seccion -->
+          <div id="seccion7" ></div>
+
+          <hr class="featurette-divider">
+      
+            <div class="row featurette">
+              <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1">Bienvenido a la seccion de Pinturas.</h2>
+                <p class="lead">Aquí encontraras pinturas de calidad y de todos los colores posibles, asegúrate de escoger la indicada.</p>
+                <a href="html/pintura/pintura.html"><button type="button" class="btn btn-outline-info">Ir a Pinturas</button></a>
+              </div>
+              <div class="col-md-5">
+                <img src="icons/pinturas icon.jpg" class="icono sombra" alt="">
+              </div>
+            </div>
+      
+          <hr class="featurette-divider">
+      
+          <!-- /FINAL DE LINKS -->
+      
+        </div>
+      <!-- Fin contenido -->
+      
+        <!-- FOOTER -->
+
+        <footer class="container-fluid" id="footer">
+          
+          <div class="row p-5 pb-2 bg-dark text-white">
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+
+              <p class="h5 mb-3">Redes Sociales</p>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="https://www.facebook.com/" target="_blank">Facebook</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="https://www.instagram.com/" target="_blank">Instagram</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="https://twitter.com/" target="_blank">Twitter</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="https://www.youtube.com/" target="_blank">Youtube</a>
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+
+              <p class="h5 mb-3">Contácto</p>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="html/contactanos.html">Contáctanos</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Preguntas frecuentes</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Home delivery</a>
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+
+              <p class="h5 mb-3">Sobre Nosotros</p>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="html/nosotros.html">Historia de nuestra empresa</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="html/nosotros.html">Misión y Visión</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="html/nosotros.html">Integrantes</a>
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+
+              <p class="h5 mb-3">Avisos y Políticas</p>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Política de privacidad</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 pt-4">
+              <p class="text-white text-center">Copyright Flux Æon - All rights reserved © 2022 </p>
+            </div>
+
+          </div>
+
+          
+
+        </footer>
+
+    </main>
+      
+  </div>  
+
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/navapp.js"></script>
+
+</body>
+</html>
