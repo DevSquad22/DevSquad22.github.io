@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Flux Æon</title>
+
+    <!-- Bootstrap -->
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- My CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!--Link para estilos de calculadora-->
+    <link rel="stylesheet" href="../css/custom.css">
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/192c0b0e4a.js" crossorigin="anonymous"></script>
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+</head>
+<body>
+
+  <!-- container -->
+  <div>
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="../img/Logo/ferreteria fondo.png" alt="" class="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Flux Æon</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galería</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="nosotros.html">Sobre nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contactanos.html">Contáctanos</a>
+                    </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Gallery -->
+            
+        <p><h1>Galería de imágenes</h1></p>
+        <!-- Idea de galeria descartada por falta de responsividad -->
+        <!-- <section class="photos"> 
+            <article class="gallery">
+                <div class="img-a">
+                    <img src="https://picsum.photos/600/300?random=1" alt="">
+                </div>
+                <div class="img-b">
+                    <img src="https://picsum.photos/300/600?random=2" alt="">
+                </div>
+                <div class="img-c">
+                    <img src="https://picsum.photos/300/300?random=3" alt="">
+                </div>
+                <div class="img-d">
+                    <img src="https://picsum.photos/300/300?random=4" alt="">
+                </div>
+                <div class="img-e">
+                    <img src="https://picsum.photos/300/300?random=5" alt="">
+                </div>
+                <div class="img-f">
+                    <img src="https://picsum.photos/600/300?random=6" alt="">
+                </div>
+            </article>
+        </section>-->
+        <div class="gallery-container">
+            <div class="gallery__item">
+                <img src="https://picsum.photos/1200/600?random=1" alt="" class="gallery__img">
+                <h2 class="gallery__title">Imagen 1</h2>
+            </div>
+            <div class="gallery__item">
+                <img src="https://picsum.photos/600/1200?random=2" alt="" class="gallery__img">
+                <h2 class="gallery__title">Imagen 2</h2>
+            </div>
+            <div class="gallery__item">
+                <img src="https://picsum.photos/1200/1200?random=3" alt="" class="gallery__img">
+                <h2 class="gallery__title">Imagen 3</h2>
+            </div>
+            <div class="gallery__item">
+                <img src="https://picsum.photos/1200/1200?random=4" alt="" class="gallery__img">
+                <h2 class="gallery__title">Imagen 4</h2>
+            </div>
+            <div class="gallery__item">
+                <img src="https://picsum.photos/1200/1200?random=5" alt="" class="gallery__img">
+                <h2 class="gallery__title">Imagen 5</h2>
+            </div>
+            <div class="gallery__item">
+                <img src="https://picsum.photos/1200/600?random=6" alt="" class="gallery__img">
+                <h2 class="gallery__title">Imagen 6</h2>
+            </div>
+            <div class="gallery__item">
+                <img src="https://picsum.photos/1200/1200?random=7" alt="" class="gallery__img">
+                <h2 class="gallery__title">Imagen 7</h2>
+            </div>
+            <div class="gallery__item">
+                <img src="https://picsum.photos/1200/1200?random=8" alt="" class="gallery__img">
+                <h2 class="gallery__title">Imagen 8</h2>
+            </div>
+            <div class="gallery__item">
+                <img src="https://picsum.photos/1200/1200?random=9" alt="" class="gallery__img">
+                <h2 class="gallery__title">Imagen 9</h2>
+            </div>
+        </div>
+
+        <!-- /Gallery -->
+
+        <!-- Nav del content -->
+        <div class="sticky-top-2">
+        <div class="menusito-boton ">
+          <i class="fas fa-bars"></i>
+        </div>
+        </div>
+          <div class="barra-lateral">
+              <div class="boton-cerrar">
+                  <i class="fas fa-times"></i>
+              </div>
+              <div class="volver-inicio">
+                <a href="#" title="Home"><i class="fa-solid fa-angle-up"></i></a>
+              </div>
+              <div class="menusito">        
+                  <div class="secciones">
+                    <div class="construct">
+                      <a href="../html/construccion/construccion.html" title="Construcción">Construcción <i class="fa-solid fa-person-digging imagen2"></i></a>
+                    </div>                    
+                  </div>
+                  <div class="secciones">
+                    <div class="carpint">
+                      <a href="../html/carpinteria/carpinteria.html" title="Carpintería">Carpintería <i class="fa-solid fa-hammer imagen2"></i></a>
+                    </div>
+                  </div>
+                  <div class="secciones">
+                    <div class="fonta">
+                      <a href="../html/fontaneria/fontaneria.html" title="Fontanería">Fontanería <i class="fa-solid fa-faucet-drip imagen2"></i></a>
+                    </div>
+                  </div>
+                  <div class="secciones">
+                    <div class="herra">
+                      <a href="../html/herramientas/herramientas.html" title="Herramientas">Herramientas <i class="fa-solid fa-screwdriver-wrench imagen2"></i></a>
+                    </div>
+                  </div>
+                  <div class="secciones">
+                    <div class="hog">
+                      <a href="../html/hogar/hogar.html" title="Hogar">Hogar <i class="fa-solid fa-house-chimney imagen2"></i></a>
+                    </div>
+                  </div>
+                  <div class="secciones">
+                    <div class="jard">
+                      <a href="../html/jardineria/jardineria.html" title="Jardinería">Jardinería <i class="fa-solid fa-seedling imagen2"></i></a>
+                    </div>
+                  </div>
+                  <div class="secciones">
+                    <div class="pint">
+                      <a href="../html/pintura/pintura.html" title="Pinturas">Pinturas <i class="fa-solid fa-brush imagen2"></i></a>
+                    </div>
+                  </div>
+                  
+              </div>
+          </div>
+
+
+
+        <!---Calculadora-->
+          <div class="container">
+             <div id="calculadora"> 
+                <div id="display"></div>
+                <div class="buttonsCalc">
+                    <div class="button">C</div>
+                    <div class="button">/</div>
+                    <div class="button">*</div>
+                    <div class="button">&larr;</div>
+                    <div class="button">7</div>
+                    <div class="button">8</div>
+                    <div class="button">9</div>
+                    <div class="button">-</div>
+                    <div class="button">4</div>
+                    <div class="button">5</div>
+                    <div class="button">6</div>
+                    <div class="button">+</div>
+                    <div class="button">1</div>
+                    <div class="button">2</div>
+                    <div class="button">3</div>
+                    <div class="button">.</div>
+                    <div class="button">(</div>
+                    <div class="button">0</div>
+                    <div class="button">)</div>
+                    <div id="equal" class="button">=</div>
+                </div>   
+            </div>          
+          </div>
+        <!---Fin de calculadora-->
+
+
+
+        <!-- Nav content final -->
+
+      <!-- Contenido -->
+        
+      <!-- Fin contenido -->
+      
+        <!-- FOOTER -->
+
+        <footer class="container-fluid" id="footer">
+          
+          <div class="row p-5 pb-2 bg-dark text-white">
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+
+              <p class="h5 mb-3">Redes Sociales</p>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="https://www.facebook.com/" target="_blank">Facebook</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="https://www.instagram.com/" target="_blank">Instagram</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="https://twitter.com/" target="_blank">Twitter</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="https://www.youtube.com/" target="_blank">Youtube</a>
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+
+              <p class="h5 mb-3">Contácto</p>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="contactanos.html">Contáctanos</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Preguntas frecuentes</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Home delivery</a>
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+
+              <p class="h5 mb-3">Sobre Nosotros</p>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="nosotros.html">Historia de nuestra empresa</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="nosotros.html">Misión y Visión</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="nosotros.html">Integrantes</a>
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 col-md-6 col-lg-3">
+
+              <p class="h5 mb-3">Avisos y Políticas</p>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Política de privacidad</a>
+              </div>
+              <div class="mb-2">
+                <a class="text-secondary text-decoration-none" href="#">Terminos y Condiciones</a>
+              </div>
+
+            </div>
+
+            <div class="col-xs-12 pt-4">
+              <p class="text-white text-center">Copyright Flux Æon - All rights reserved © 2022 </p>
+            </div>
+
+          </div>
+
+          
+
+        </footer>
+
+    </main>
+      
+  </div>  
+    <script src="../js/main.js"></script>
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/navapp.js"></script>
+
+</body>
+</html>
