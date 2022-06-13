@@ -433,6 +433,10 @@ body {
 
 /* Galeria */
 
+.gallery-title {
+    text-align: center;
+}
+
 .gallery-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -453,12 +457,14 @@ body {
     width: 100%;
     margin: 0;
     padding: 10px;
+    border-radius: 15px;
 }
 
 .gallery-container .gallery__item .gallery__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 15px;
 }
 
 .gallery-container .gallery__item:nth-child(1) {
