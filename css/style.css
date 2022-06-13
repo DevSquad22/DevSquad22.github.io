@@ -9,8 +9,24 @@ body {
 }
 
 /* Index Content */
+
 .carousel-caption {
     color: white;
+    height: 50%;
+}
+
+.carousel-caption h5  {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.carousel-caption p {
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+
+.recolor {
+    text-shadow: 0 0 6px rgb(0, 0, 0);
 }
 
 .container .row .col-md-7 .btn {
@@ -402,10 +418,6 @@ body {
     color: #5a5a5a;
 }
 
-.recolor {
-    text-shadow: 0 0 2px rgb(0, 0, 0);
-}
-
 .recolorDark {
     color: black;
 }
@@ -617,6 +629,7 @@ body {
     .gallery-container .gallery__item:nth-child(8) {
         grid-column-start: span 2;
     }
+    
      
 }
 
