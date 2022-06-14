@@ -1,4 +1,104 @@
-/*Estilos de calculadora*/
+/* Calculadoras */
+
+/*Estilos de calculadora Ofertas*/
+.container #calculadoraOffer{
+    max-width: 350px;
+    margin: 10vh auto 0 auto;
+    margin-bottom: 15px;
+    background-color: rgb(26, 22, 22);
+    color: white;
+    color: #df4759;
+    box-shadow: 0px 0px 20px 1px rgb(26, 22, 22);
+}
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 45px;
+}
+.buttonsCalc{
+    display: grid;
+    border-bottom: 1px solid rgb(26, 22, 22);
+    border-left: 1px solid rgb(26, 22, 22);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.buttons > div{
+    border-top: 1px solid rgb(26, 22, 22);
+    border-right: 1px solid rgb(26, 22, 22);
+}
+.button{
+    background-color: black;
+    border: 2.5px solid rgb(26, 22, 22);
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equal{
+    background-color: rgb(26, 22, 22);
+    color: white;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: rgb(219, 219, 219);
+    color: black;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    border-radius: 3px;
+}
+/* Estilos calculadora ofertas */
+
+/*Estilos de calculadora Carpinteria*/
+.container #calculadoraCarp{
+    max-width: 350px;
+    margin: 10vh auto 0 auto;
+    margin-bottom: 15px;
+    background-color: rgb(26, 22, 22);
+    color: white;
+    color: #a86f36;
+    box-shadow: 0px 0px 20px 1px rgb(26, 22, 22);
+}
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 45px;
+}
+.buttonsCalc{
+    display: grid;
+    border-bottom: 1px solid rgb(26, 22, 22);
+    border-left: 1px solid rgb(26, 22, 22);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.buttons > div{
+    border-top: 1px solid rgb(26, 22, 22);
+    border-right: 1px solid rgb(26, 22, 22);
+}
+.button{
+    background-color: black;
+    border: 2.5px solid rgb(26, 22, 22);
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equal{
+    background-color: rgb(26, 22, 22);
+    color: white;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: rgb(219, 219, 219);
+    color: black;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    border-radius: 3px;
+}
+/* Estilos calculadora Carpt */
+
+/*Estilos de calculadora Construccion*/
 .container #calculadora{
     width: 350px;
     max-width: 350px;
@@ -6,7 +106,7 @@
     margin-bottom: 15px;
     background-color: rgb(26, 22, 22);
     color: white;
-    color: aqua;
+    color: #a0a0a0;
     box-shadow: 0px 0px 20px 1px rgb(26, 22, 22);
 }
 #display{
@@ -46,3 +146,201 @@
     transition: 0.5s ease-in-out;
     border-radius: 3px;
 }
+/* Estilos calculadora Const */
+/* Estilo Hog */
+.container #calculadoraHog{
+    width: 350px;
+    max-width: 350px;
+    margin: 10vh auto 0 auto;
+    margin-bottom: 15px;
+    background-color: rgb(26, 22, 22);
+    color: white;
+    color: #C0B283;
+    box-shadow: 0px 0px 20px 1px rgb(26, 22, 22);
+}
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 45px;
+}
+.buttonsCalc{
+    display: grid;
+    border-bottom: 1px solid rgb(26, 22, 22);
+    border-left: 1px solid rgb(26, 22, 22);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.buttons > div{
+    border-top: 1px solid rgb(26, 22, 22);
+    border-right: 1px solid rgb(26, 22, 22);
+}
+.button{
+    background-color: black;
+    border: 2.5px solid rgb(26, 22, 22);
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equal{
+    background-color: rgb(26, 22, 22);
+    color: white;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: rgb(219, 219, 219);
+    color: black;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    border-radius: 3px;
+}
+/* /estilo Hog */
+/* Estilo Font */ 
+.container #calculadoraFont{
+    width: 350px;
+    max-width: 350px;
+    margin: 10vh auto 0 auto;
+    margin-bottom: 15px;
+    background-color: rgb(26, 22, 22);
+    color: white;
+    color: #286DA8;
+    box-shadow: 0px 0px 20px 1px rgb(26, 22, 22);
+}
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 45px;
+}
+.buttonsCalc{
+    display: grid;
+    border-bottom: 1px solid rgb(26, 22, 22);
+    border-left: 1px solid rgb(26, 22, 22);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.buttons > div{
+    border-top: 1px solid rgb(26, 22, 22);
+    border-right: 1px solid rgb(26, 22, 22);
+}
+.button{
+    background-color: black;
+    border: 2.5px solid rgb(26, 22, 22);
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equal{
+    background-color: rgb(26, 22, 22);
+    color: white;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: rgb(219, 219, 219);
+    color: black;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    border-radius: 3px;
+}
+/* /estilo Font */
+/* Estilo Jardin */
+.container #calculadoraJard{
+    width: 350px;
+    max-width: 350px;
+    margin: 10vh auto 0 auto;
+    margin-bottom: 15px;
+    background-color: rgb(26, 22, 22);
+    color: white;
+    color: #00b972;
+    box-shadow: 0px 0px 20px 1px rgb(26, 22, 22);
+}
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 45px;
+}
+.buttonsCalc{
+    display: grid;
+    border-bottom: 1px solid rgb(26, 22, 22);
+    border-left: 1px solid rgb(26, 22, 22);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.buttons > div{
+    border-top: 1px solid rgb(26, 22, 22);
+    border-right: 1px solid rgb(26, 22, 22);
+}
+.button{
+    background-color: black;
+    border: 2.5px solid rgb(26, 22, 22);
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equal{
+    background-color: rgb(26, 22, 22);
+    color: white;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: rgb(219, 219, 219);
+    color: black;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    border-radius: 3px;
+}
+/* /Estilo Jardin */
+/* Estilo pintura */
+.container #calculadoraPint{
+    width: 350px;
+    max-width: 350px;
+    margin: 10vh auto 0 auto;
+    margin-bottom: 15px;
+    background-color: rgb(26, 22, 22);
+    color: white;
+    color: #fa74ff;
+    box-shadow: 0px 0px 20px 1px rgb(26, 22, 22);
+}
+#display{
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+    padding: 16px 8px;
+    font-size: 45px;
+}
+.buttonsCalc{
+    display: grid;
+    border-bottom: 1px solid rgb(26, 22, 22);
+    border-left: 1px solid rgb(26, 22, 22);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.buttons > div{
+    border-top: 1px solid rgb(26, 22, 22);
+    border-right: 1px solid rgb(26, 22, 22);
+}
+.button{
+    background-color: black;
+    border: 2.5px solid rgb(26, 22, 22);
+    line-height: 70px;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+}
+#equal{
+    background-color: rgb(26, 22, 22);
+    color: white;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: rgb(219, 219, 219);
+    color: black;
+    font-weight: bold;
+    transition: 0.5s ease-in-out;
+    border-radius: 3px;
+}
+/* /Estilo pintura */
+/* Fin Calaculadoras */

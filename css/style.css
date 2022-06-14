@@ -93,7 +93,9 @@ body {
     margin-top: 10px;
 }
 
-
+.news {
+    text-align: justify;
+}
 /* Fin Index content */
 
 /* Navbar lateral */
@@ -125,17 +127,16 @@ body {
 }
 
 .barra-lateral .menusito {
-    margin-top: 150px;
+    margin-top: 80px;
     width: 100%;
 }
 
-@media screen   {
-    .barra-lateral .menusito {
-        margin-top: 80px;
+@media screen and (max-width: 768px) {
+    .barra-lateral .menusito{
+        margin-top: 10px;
         width: 100%;
     }
 }
-
     /* Hover */
 
 .barra-lateral .menusito .secciones {
@@ -151,6 +152,12 @@ body {
     padding: 5px 30px;
     line-height: 60px;
     text-align: right;
+}
+
+.barra-lateral .menusito .secciones .notis a:hover{
+    background: #5bc0de;
+    transition: 0.3s ease;
+    color: rgb(0, 0, 0);
 }
 
 .barra-lateral .menusito .secciones .construct a:hover{
@@ -1138,6 +1145,9 @@ label{
 .bg-pint3 {
     background-color: #3363ff;
 }
+.bg-pint4 {
+    background-color: #b102b7;
+}
 /* /Pinturas */
 
 
@@ -1145,3 +1155,26 @@ label{
 #mas, #menos{
     cursor: pointer;
 }
+
+/* Navegacion de Ofertas */
+.navAreaOffer {
+    border-radius: 10px;
+    margin-bottom: 5px;
+    transition: 0.3s ease;
+}
+
+.navAreaOffer a {
+    text-decoration: none;
+    color: #5a5a5a;
+}
+
+.navAreaOffer:hover {
+    transition: 0.3s ease;
+    box-shadow: rgba(223, 71, 89, 0.35) 0px 5px 15px;
+
+}
+
+.bg-offer {
+    background-color: #df4759;
+}
+/* /Ofertas */
