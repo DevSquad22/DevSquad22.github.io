@@ -115,13 +115,11 @@
 }
 
 .card:hover .buttons{
-
     opacity: 1;
 }
 
 
 .card:hover .weight{
-
      margin-top: 10px;
 }
 
