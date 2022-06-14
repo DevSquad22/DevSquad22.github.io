@@ -9,14 +9,12 @@
 }
 
 .card{
-
     border:1px solid #d4d2d2!important;
     cursor: pointer;
 }
 
 
 .weight{
-
     margin-top: -65px; 
     transition: all 0.5s;  
 }
@@ -27,7 +25,7 @@
 }
 
 .buttons {
-        padding: 10px;
+    padding: 10px;
     background-color: #d6d4d44f;
     border-radius: 4px;
     position: relative;

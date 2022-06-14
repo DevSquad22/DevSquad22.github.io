@@ -21,7 +21,6 @@ body {
 }
 
 .carousel-caption p {
-    margin-bottom: 0px;
     font-weight: bold;
 }
 
@@ -83,6 +82,16 @@ body {
     margin-left: .75rem;
 }
   
+#card{
+    width: auto;
+    max-height: 500px;
+    margin-top: 10px;
+    opacity: 0;
+}
+
+.textCards{
+    margin-top: 10px;
+}
 
 
 /* Fin Index content */
@@ -918,6 +927,7 @@ label{
     margin-top: 20px;
 }
 /* Fin de contáctanos */
+
 
 
 /* Navegacion de productos Construccion */
