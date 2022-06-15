@@ -224,11 +224,12 @@ body {
 }
 
 .boton-cerrar {
-    position: absolute;
+    position: relative;
     color: rgb(0, 0, 0);
     font-size: 30px;
     right: 0;
-    bottom: 0;
+    float: right;
+    bottom: 7px;
     cursor: pointer;
     margin: 25px;
 }
@@ -240,11 +241,12 @@ body {
 
 .volver-inicio a {
     text-decoration: none;
-    position: absolute;
+    position: relative;
+    float: left;
     color: rgb(0, 0, 0);
     font-size: 30px;
     right: 50;
-    bottom: 0;
+    bottom: 7px;
     margin: 24px;  
 }
 
@@ -375,11 +377,11 @@ body {
 }
 
 .boton-cerrarExt {
-    position: absolute;
+    position: relative;
     color: rgb(0, 0, 0);
     font-size: 30px;
-    right: 0;
-    bottom: 7;
+    float: right;
+    bottom: 7px;
     cursor: pointer;
     margin: 25px;
 }
@@ -390,11 +392,11 @@ body {
 
 .volver-inicioExt a {
     text-decoration: none;
-    position: absolute;
+    position: relative;
     color: rgb(0, 0, 0);
     font-size: 30px;
-    left: 0;
-    bottom: 7;
+    float: left;
+    bottom: 7px;
     margin: 24px;  
 }
 
