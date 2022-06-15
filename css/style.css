@@ -1178,3 +1178,9 @@ label{
     background-color: #df4759;
 }
 /* /Ofertas */
+
+/*Alerta de formulario*/
+#liveAlertPlaceholder{
+    color: darkcyan;
+    font-weight: bold;
+}

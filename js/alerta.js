@@ -1,28 +1,38 @@
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+function validar(){
+    inputName = document.getElementById("inputName").value; 
+    inputMail = document.getElementById("floatingInput").value; 
+    inputComment = document.getElementById("floatingTextarea").value; 
 
-const alert = (message, type) => {
-  const wrapper = document.createElement('div')
-  wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-    `   <div>${message}</div>`,
-    '   <button type="button" class="btn-close" data-bs-dismiss="alert" onclick="location.reload()" aria-label="Close"></button>',
-    '</div>'
-  ].join('')
+    response = document.getElementById("liveAlertPlaceholder"); 
+    response.innerText = ""; 
+    myText = "";
+    errors = 0; 
 
-  alertPlaceholder.append(wrapper)
+    if(inputName.length < 2){
+        myText += "*Nombre incorrecto\n";
+        errors++; 
+    }
+    if(inputMail.length < 7){
+        myText += "*Correo incorrecto\n"
+        errors++; 
+    } 
+    if(inputComment.length < 2){
+        myText += "*Comentario incorrecto\n"
+        errors++;
+    } 
+    if(errors === 0){
+        mainButton.type = "submit"; 
+    }
+    response.innerText = myText; 
 }
 
-const alertTrigger = document.getElementById('miSubmit')
-  if (alertTrigger) {
-    
-    alertTrigger.addEventListener('click', () => {
-      myName = document.getElementById('inputName'); 
-      myName = myName.value; 
-      if(myName != ""){
-        alert(`¡Gracias por compartir ${myName}!`, 'success')
-      }
-  })
-}
+var mainButton = document.getElementById("miSubmit"); 
+mainButton.addEventListener("click", ()=>{
+    validar(); 
+}); 
 
-
+myForm = document.getElementById("mainContactForm"); 
+myForm.addEventListener("submit", ()=>{
+    alert("Gracias por compartir!"); 
+});
 
